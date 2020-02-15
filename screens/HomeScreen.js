@@ -1,8 +1,10 @@
 import * as React from 'react';
-import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, Platform, StyleSheet, Text, TouchableOpacity, View, Button } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import * as WebBrowser from 'expo-web-browser';
+import { observer } from 'mobx-react';
 
+import useStores from '../useStores';
 import { MonoText } from '../components/StyledText';
 
 const styles = StyleSheet.create({
@@ -127,7 +129,9 @@ function DevelopmentModeNotice() {
   );
 }
 
-export default function HomeScreen() {
+function HomeScreen() {
+  const { timerStore } = useStores();
+
   return (
     <View style={styles.container}>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -154,9 +158,7 @@ export default function HomeScreen() {
             <MonoText>screens/HomeScreen.js</MonoText>
           </View>
 
-          <Text style={styles.getStartedText}>
-            Change any of the text, save the file, and your app will automatically reload.
-          </Text>
+          <Button onPress={timerStore.resetTimer} title={`Seconds passed: ${timerStore.timer}`} />
         </View>
 
         <View style={styles.helpContainer}>
@@ -180,3 +182,5 @@ export default function HomeScreen() {
 HomeScreen.navigationOptions = {
   header: null,
 };
+
+export default observer(HomeScreen);

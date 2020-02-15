@@ -1,33 +1,42 @@
 Arguments: 
-  /usr/local/Cellar/node@10/10.18.1/bin/node /usr/local/bin/yarn add -D eslint-plugin-jest-recommended
+  /Users/jimbo/.config/nvm/12.16.0/bin/node /usr/local/bin/yarn install
 
 PATH: 
-  /usr/local/opt/node@10/bin:/Users/jimbo/perl5/bin:/usr/local/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/usr/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/usr/sbin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/sbin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/opt/X11/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/Users/jimbo/devel/template/node_modules/.bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin
+  /Users/jimbo/.config/nvm/12.16.0/bin:/usr/local/opt/node@10/bin:/Users/jimbo/perl5/bin:/usr/local/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/usr/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/usr/sbin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/sbin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/opt/X11/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin:/Users/jimbo/devel/template/node_modules/.bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/tools/bin:/Users/jimbo/perl5/bin:/Users/jimbo/Library/Android/sdk/platform_tools:/Users/jimbo/perl5/bin
 
 Yarn version: 
   1.17.3
 
 Node version: 
-  10.18.1
+  12.16.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/eslint-plugin-jest-recommended: Not found
-      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66830:18)
-      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140464:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141436:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141358:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1145:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  SyntaxError: /Users/jimbo/devel/template/package.json: Unexpected token } in JSON at position 421
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
 
 npm manifest: 
   {
+    "homepage": "https://github.com/jimbofreedman/react-native-template",
+    "bugs": "https://github.com/jimbofreedman/react-native-template/issues",
+    "version": "0.0.1",
+    "description": "Jimbo Freedman's React Native app template",
+    "keywords": ["react", "react-native", "mobx", "eslint", "material-ui"],
+    "licence": "MIT",
+    "author": {
+      "name": "Jimbo Freedman",
+      "url": "https://github.com/jimbofreedman",
+    },
+    "repository": {
+      "type" : "git",
+      "url" : "https://github.com/jimbofreedman/react-native-template.git"
+    },
     "main": "node_modules/expo/AppEntry.js",
     "scripts": {
       "start": "expo start",

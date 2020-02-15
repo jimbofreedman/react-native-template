@@ -3,15 +3,21 @@
   "bugs": "https://github.com/jimbofreedman/react-native-template/issues",
   "version": "0.0.1",
   "description": "Jimbo Freedman's React Native app template",
-  "keywords": ["react", "react-native", "mobx", "eslint", "material-ui"],
+  "keywords": [
+    "react",
+    "react-native",
+    "mobx",
+    "eslint",
+    "material-ui"
+  ],
   "licence": "MIT",
   "author": {
     "name": "Jimbo Freedman",
     "url": "https://github.com/jimbofreedman"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/jimbofreedman/react-native-template.git"
+    "type": "git",
+    "url": "https://github.com/jimbofreedman/react-native-template.git"
   },
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -39,6 +45,9 @@
     "expo-constants": "~8.0.0",
     "expo-font": "~8.0.0",
     "expo-web-browser": "~8.0.0",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.1.8",
+    "mobx-utils": "^5.5.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
