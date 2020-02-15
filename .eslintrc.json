@@ -1,14 +1,21 @@
 {
+    "env": {
+        "jest": true
+    },
     "extends": [
         "airbnb",
         "prettier",
         "prettier/react",
         "plugin:prettier/recommended",
-        "eslint-config-prettier"
+        "eslint-config-prettier",
+        "plugin:jest/recommended",
+        "plugin:jest/style"
     ],
     "parser": "babel-eslint",
     "rules": {
         "import/no-unresolved": "off",
+        "react/prop-types": 0,
+        "react/jsx-props-no-spreading": 0,
         "react/jsx-filename-extension": [
             1,
             {
@@ -24,5 +31,5 @@
             }
         ]
     },
-    "plugins": ["prettier"]
+    "plugins": ["prettier", "jest"]
 }
