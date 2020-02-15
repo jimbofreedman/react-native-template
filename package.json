@@ -3,11 +3,11 @@
   "bugs": "https://github.com/jimbofreedman/react-native-template/issues",
   "version": "0.0.1",
   "description": "Jimbo Freedman's React Native app template",
-  "keywords": "react react-native mobx eslint material-ui",
+  "keywords": ["react", "react-native", "mobx", "eslint", "material-ui"],
   "licence": "MIT",
   "author": {
     "name": "Jimbo Freedman",
-    "url": "https://github.com/jimbofreedman",
+    "url": "https://github.com/jimbofreedman"
   },
   "repository": {
     "type" : "git",
