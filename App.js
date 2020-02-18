@@ -40,6 +40,8 @@ export default function App(props) {
           ...Ionicons.font,
           // eslint-disable-next-line global-require
           'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+          Roboto: require('native-base/Fonts/Roboto.ttf'),
+          Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service

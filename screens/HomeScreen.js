@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Image, Platform, StyleSheet, Text, TouchableOpacity, View, Button } from 'react-native';
+import { Image, Platform, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { Button, Text } from 'native-base';
 import { ScrollView } from 'react-native-gesture-handler';
 import * as WebBrowser from 'expo-web-browser';
 import { observer } from 'mobx-react';
@@ -158,7 +159,7 @@ function HomeScreen() {
             <MonoText>screens/HomeScreen.js</MonoText>
           </View>
 
-          <Button onPress={timerStore.resetTimer} title={`Seconds passed: ${timerStore.timer}`} />
+          <Button rounded light onPress={timerStore.resetTimer}><Text>{`Seconds passed: ${timerStore.timer}`}</Text></Button>
         </View>
 
         <View style={styles.helpContainer}>
